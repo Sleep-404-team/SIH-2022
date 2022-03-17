@@ -15,7 +15,7 @@ const Topbar = () => {
         </a>
       ) : (
         <div className="rounded-xl bg-[#1e204c] px-12 py-1 text-xl text-white">
-          Login
+          <a href="/signin">Login</a>
         </div>
       )}
     </div>
