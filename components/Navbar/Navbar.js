@@ -1,4 +1,6 @@
 import React from "react";
+import Link from 'next/link'
+// importing images
 import pic from "../../public/images/nav/pic.svg";
 import dashboard from '../../public/images/nav/dashboard.svg'
 import internship from '../../public/images/nav/internship.svg'
@@ -15,28 +17,31 @@ function Navbar() {
 
         <div className="mt-5">
           <div className="my-7 w-8">
-            <img src={pic.src} alt="img" />
+            <Link href="/profile"><a><img src={pic.src} alt="img" /></a></Link>
           </div>
           <div className="my-7 w-7">
-            <img src={dashboard.src} alt="img" />
+            <Link href="/dashboard"><a><img src={dashboard.src} alt="img" /></a></Link>
           </div>
           <div className="my-7 w-7">
-            <img src={internship.src} alt="img" />
+            <Link href="/internships"><a><img src={internship.src} alt="img" /></a></Link>
           </div>
           <div className="my-7 w-7">
-            <img src={chat.src} alt="img" />
+            <Link href="/chat"><a><img src={chat.src} alt="img" /></a></Link>
           </div>
           <div className="my-7 w-7">
-            <img src={resources.src} alt="img" />
+            <Link href="/resources"><a><img src={resources.src} alt="img" /></a></Link>
+          </div>
+          <div className="my-7 w-7">
+            <Link href="/applications"><a><img src={apps.src} alt="img" /></a></Link>
           </div>
         </div>
 
         <div className="mt-auto mb-5">
           <div className="my-7 w-7">
-            <img src={gear.src} alt="img" />
+            <Link href="/settings"><a><img src={gear.src} alt="img" /></a></Link>
           </div>
           <div className="my-7 w-7">
-            <img src={exit.src} alt="img" />
+            <Link href="/exit"><a><img src={exit.src} alt="img" /></a></Link>
           </div>
         </div>
 
