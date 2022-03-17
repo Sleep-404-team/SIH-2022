@@ -1,14 +1,21 @@
 import React from 'react'
+import Link from 'next/link'
 
 function DashboardCard(props) {
   return (
-    <div className='border border-black rounded-lg bg-white'>
+    <div className='rounded-lg bg-white'>
+       
       <div className="">
-        <img src={props.img} alt="" />
+        
+          <img src={props.img} alt="" />
+        
       </div>
-      <div className="text-3xl text-[#1e214d] font-medium text-center">
-        {props.title}
-      </div>
+      <Link href="/internships">
+        <a className="text-3xl text-[#1e214d] font-medium flex justify-center">
+          {props.title}
+        </a>
+      </Link>
+      
     </div>
   )
 }
