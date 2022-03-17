@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./Dashboard.module.css";
 import Search from "../Search/Search";
 import DashboardCard from "./DashboardCard";
+import Link from "next/link";
 
 // importing images
 import arrow from "../../public/images/forMore/arrow.svg";
@@ -11,10 +12,10 @@ function Dashboard() {
   return (
     <div className="text-[#1e214d]">
       {/* Search bar on top */}
-      <Search />
+      {/* <Search /> */}
 
       {/* Name of user */}
-      <div className="my-2 text-5xl font-bold">Good Morning , Name.</div>
+      <div className="my-2 text-5xl font-bold pt-[3vh]">Good Morning , John.</div>
 
       {/* Numbers grid */}
       <div className="my-2 grid grid-cols-3 gap-1">
@@ -36,7 +37,7 @@ function Dashboard() {
       </div>
 
       {/* For you title */}
-      <div className="my-2 text-5xl font-bold">For You <img src={arrow.src} alt="" className="inline" /> </div>
+      <div className="my-2 text-5xl font-bold"><Link href="/internships"> For You</Link> <img src={arrow.src} alt="" className="inline" /> </div>
       {/* For you grid */}
       <div className="grid grid-cols-3 gap-10">
         <DashboardCard img={web.src} title="Web Development" />

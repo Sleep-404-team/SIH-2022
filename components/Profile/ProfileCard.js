@@ -1,4 +1,6 @@
 import React from "react";
+import Link from "next/link";
+
 import profile from "../../public/images/pic.svg";
 import git from "../../public/images/profile/git.svg";
 import facebook from "../../public/images/profile/facebook.svg";
@@ -11,11 +13,15 @@ function ProfileCard() {
     <div className="text-[#1e214d]  bg-white rounded-2xl h-[75vh] px-5">
       <div className="grid grid-cols-2 pt-5 ">
         <div className="flex flex-col justify-center items-start">
-          <div className="text-5xl font-bold my-2">John Cena</div>
+          <div className="text-5xl font-bold my-2">John</div>
           <div className="text-3xl my-2">Full Stack Developer</div>
           <div className="flex my-2">
-            <img src={git.src} alt="" className="" />
-            <img src={facebook.src} alt="" className="mx-5" />
+            <a href="https://www.github.com">
+              <img src={git.src} alt="" className="" />
+            </a>
+            <a href="https://www.facebook.com">
+              <img src={facebook.src} alt="" className="mx-5" />
+            </a>
           </div>
         </div>
         <div className="flex justify-center items-center">
@@ -23,12 +29,11 @@ function ProfileCard() {
         </div>
       </div>
       <div className="my-5 font-medium">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
-        asperiores dolor eaque, repudiandae ea, modi officia necessitatibus
-        doloribus sit ratione labore amet nobis quam? Vel officia, impedit vitae
-        quod odio porro voluptatum praesentium rerum laborum vero dolor dolorem
-        reiciendis distinctio, dolores sed magni nihil aspernatur voluptate
-        minima. Adipisci, doloremque eaque!
+        Computer Science Engineering student with interest in Full Stack
+        Development. Creating the architecture of a front-end website, and
+        web page user interactions excites me. Creating website applications for the back
+        end. For functionality, servers and databases are one of my speciality. I always ensure mobile
+        phone cross-platform optimization.
       </div>
 
       <div className="grid grid-cols-2 gap-1 my-5">
@@ -38,6 +43,7 @@ function ProfileCard() {
             <SkillsCard title="HTML" />
             <SkillsCard title="CSS" />
             <SkillsCard title="JavaScript" />
+            <SkillsCard title="Nodejs" />
             <div className="flex justify-start items-center ">
               <button className="bg-[#1e214d] text-white px-2  rounded-full text-3xl font-bold">
                 +
