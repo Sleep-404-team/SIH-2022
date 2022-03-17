@@ -10,11 +10,11 @@ function AddSection() {
           <div className={classes.vertical}></div>
         </div>
       </div>
-      <div className="flex flex-col justify-end mx-2">
+      <div className="flex flex-col justify-end mx-2 w-full">
         <div className="font-medium">Sleep 404</div>
         <div className="flex justify-between">
           <div className="">Full Stack Developer</div>
-          <div className="">18-09-2021</div>
+          <div className="">Oct-Feb-2021</div>
         </div>
       </div>
     </div>
