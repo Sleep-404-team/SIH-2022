@@ -79,13 +79,7 @@ const InternshipListings = ({ internships }, id) => {
           startDate={internship.startDate}
           tags={internship.tags}
         >
-          We are a team of 15 experienced consultants on our rolls with over 70
-          years of combined experience. Our consultants have vast experience in
-          website development & digital marketing. We also have experience in
-          Magento, OpenCart Zen Cart WordPress, PHP, CSS, NET, ROR, HTML5,
-          AngularJS, Laravel & mobile app development (Android, IOS, and
-          cross-platform application), etc. DB advances, for example, MySQL,
-          SQL, JSON, XML, and different APIs.
+          {internship.description}
         </InternshipListingCard>
       ))}
     </div>

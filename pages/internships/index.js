@@ -12,7 +12,7 @@ export default function Internships({ internships }) {
 
 export const getServerSideProps = async () => {
   const resInternships = await fetch(
-    "https://sleep404-api.vercel.app/api/v1/internship/"
+    "https://sw-f03-api.vercel.app/api/v1/internship"
   );
   const internships = await resInternships.json();
   return {
