@@ -1,0 +1,19 @@
+/* vertical line */
+.vertical::after{
+  content: "";
+  display: block;
+  width: 11px;
+  height: 90px;
+  margin: 0px 10px;
+  border-radius: 20px;
+  background-color: #1e214d;
+}
+.dot::after{
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 5px 10px;
+  border-radius: 100%;
+  background-color: #1e214d;
+}
