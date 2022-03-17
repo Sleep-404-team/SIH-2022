@@ -64,7 +64,7 @@ const InternshipListingCard = ({
   );
 };
 
-const InternshipListings = ({ internships }, id) => {
+const InternshipListings = ({ internships }) => {
   return (
     <div className="my-10 flex flex-col gap-10">
       {internships.map((internship, idx) => (
