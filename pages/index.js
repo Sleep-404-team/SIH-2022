@@ -1,4 +1,4 @@
-import { Topbar, Hero, FeaturedInternships, Footer } from "../components";
+import { Topbar, Hero, FeaturedInternships, FAQs, Footer } from "../components";
 
 export default function Home({ featuredInternships }) {
   return (
@@ -7,6 +7,7 @@ export default function Home({ featuredInternships }) {
       <div className="mx-auto my-5 flex flex-col w-3/4">
         <Hero />
         <FeaturedInternships featuredInternships={featuredInternships} />
+        <FAQs />
       </div>
       <Footer />
     </>
