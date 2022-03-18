@@ -5,9 +5,9 @@ const Topbar = () => {
   const [isLogged, setIsLogged] = useState(false);
 
   return (
-    <div className="m-auto flex w-2/3 items-center justify-between pt-5">
+    <div className="mx-auto flex w-2/3 items-center justify-between pt-10">
       <a href="/">
-        <Image src="/logo.svg" width="90px" height="90px" />
+        <Image src="/logo.svg" width={40} height={40} />
       </a>
       {isLogged ? (
         <a href="/profile">
