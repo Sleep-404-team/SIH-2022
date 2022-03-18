@@ -56,11 +56,10 @@ function ProfileCard({ card }) {
             Contact
             <img src={contact.src} alt="" className="inline ml-4" />
           </button>
-          <Link href={`/${userId}`}>
+          <Link href={`/${userId}/portfolio`}>
             <a>
               <button className="px-9 py-2 mt-5 rounded-md bg-[#1e214d] text-white text-lg">
                 Build Portfolio
-                {/* <img src={contact.src} alt="" className="inline ml-4" /> */}
               </button>
             </a>
           </Link>
