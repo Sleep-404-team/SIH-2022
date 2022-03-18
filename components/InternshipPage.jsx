@@ -36,11 +36,11 @@ const InternshipPage = ({ internship }) => {
       </div>
       <div className="m-auto flex w-1/2 flex-col gap-3 rounded-xl bg-white p-8">
         <div className="text-2xl font-bold">Tasks</div>
-        <div className="flex gap-2">
+        <div className="flex flex-col gap-2">
           {internship.tasks.map((task, id) => (
             <p
               key={id}
-              className="rounded-md bg-[#1e204c] px-2 py-1 text-sm text-white"
+              className="rounded-md bg-[#1e204c] p-2 text-sm text-white"
             >
               {task}
             </p>
