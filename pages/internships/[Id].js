@@ -1,11 +1,11 @@
-import { Topbar, InternshipListings, Footer } from "../../components";
+import { Topbar, InternshipPage, Footer } from "../../components";
 import Config from "../../utils/config";
-import { useRouter } from "next/router";
 
 export default function Internships({ internship }) {
   return (
     <>
       <Topbar />
+      <InternshipPage internship={internship} />
       <Footer />
     </>
   );
@@ -14,8 +14,8 @@ export default function Internships({ internship }) {
 export const getServerSideProps = async (context) => {
   const { Id } = context.query;
 
-  const resInternships = await fetch(`${Config.API_URL}/internship/${Id}`);
-  const internship = await resInternships.json();
+  const resInternship = await fetch(`${Config.API_URL}/internship/${Id}`);
+  const internship = await resInternship.json();
   return {
     props: {
       internship,
