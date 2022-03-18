@@ -1,4 +1,4 @@
-import { ProfileCard, FeaturedProjects } from ".";
+import { ProfileCard, FeaturedProjects, Card } from ".";
 
 const Portfolio = () => {
   return (
@@ -8,6 +8,12 @@ const Portfolio = () => {
       </div>
       <div className="col-span-2">
         <FeaturedProjects />
+      </div>
+      <div className="col-span-3">
+        <Card title="Experience" />
+      </div>
+      <div className="col-span-3">
+        <Card title="Education" />
       </div>
     </div>
   );
