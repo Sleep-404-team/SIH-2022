@@ -15,8 +15,9 @@ const Profile = ({ profile }) => {
 
 export default Profile;
 
-export const getServerSideProps = async () => {
-  const resProfile = await fetch(`${Config.API_URL}/user/mdfarhaan`);
+export const getServerSideProps = async (context) => {
+  const { userId } = context.query;
+  const resProfile = await fetch(`${Config.API_URL}/user/${userId}`);
   const profile = await resProfile.json();
   return {
     props: {

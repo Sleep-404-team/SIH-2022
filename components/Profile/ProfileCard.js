@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-
 import profile from "../../public/images/pic.svg";
 import git from "../../public/images/profile/git.svg";
 import facebook from "../../public/images/profile/facebook.svg";
@@ -9,7 +8,7 @@ import contact from "../../public/images/profile/contact.svg";
 import SkillsCard from "./SkillsCard";
 
 function ProfileCard({ card }) {
-  const { name, about, title, social } = card;
+  const { name, about, title, social, skills, userId } = card;
 
   return (
     <div className="text-[#1e214d]  bg-white rounded-2xl h-[75vh] px-5">
@@ -36,10 +35,10 @@ function ProfileCard({ card }) {
         <div className="">
           <div className="text-3xl font-bold">Skills</div>
           <div className="grid grid-cols-5 gap-2 my-4">
-            <SkillsCard title="HTML" />
-            <SkillsCard title="CSS" />
-            <SkillsCard title="JavaScript" />
-            <SkillsCard title="Nodejs" />
+            {skills.map((skill) => (
+              <SkillsCard title={skill} key={skill} />
+            ))}
+
             <div className="flex justify-start items-center ">
               <button className="bg-[#1e214d] text-white px-2  rounded-full text-3xl font-bold">
                 +
@@ -47,6 +46,7 @@ function ProfileCard({ card }) {
             </div>
           </div>
         </div>
+
         <div className="flex flex-col justify-center items-center">
           <button className="px-8 py-2 mb-3 rounded-md bg-[#1e214d] text-white text-lg">
             Resume
@@ -56,6 +56,14 @@ function ProfileCard({ card }) {
             Contact
             <img src={contact.src} alt="" className="inline ml-4" />
           </button>
+          <Link href={`/${userId}`}>
+            <a>
+              <button className="px-9 py-2 mt-5 rounded-md bg-[#1e214d] text-white text-lg">
+                Build Portfolio
+                {/* <img src={contact.src} alt="" className="inline ml-4" /> */}
+              </button>
+            </a>
+          </Link>
         </div>
       </div>
     </div>
