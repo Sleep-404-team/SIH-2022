@@ -10,6 +10,7 @@ function ProfileLayout({ profile }) {
     social: profile.social,
     about: profile.about,
     skills: profile.skills,
+    userId: profile.userId,
   };
 
   return (
