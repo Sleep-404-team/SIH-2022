@@ -1,10 +1,11 @@
 import { Topbar, Footer } from "../components/Landing";
-import { Portfolio } from "../components/Portfolio";
+import { Portfolio, PortfolioHero } from "../components/Portfolio";
 
 const portfolio = () => {
   return (
     <>
       <Topbar />
+      <PortfolioHero />
       <Portfolio />
       <Footer />
     </>
