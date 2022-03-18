@@ -5,7 +5,7 @@ const FeaturedProjects = () => {
       <div className="grid grid-cols-2 gap-5">
         {[...Array(4)].map((_, id) => (
           <div className="flex flex-col gap-2 bg-[#1e204c] text-white rounded-lg p-5">
-            <p className="text-lg">Project</p>
+            <p className="text-lg font-bold">Project</p>
             <p className="text-sm">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
               nesciunt fugiat quam vel neque eum eos laboriosam quibusdam fuga
