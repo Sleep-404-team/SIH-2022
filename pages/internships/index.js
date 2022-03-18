@@ -1,4 +1,5 @@
 import { Topbar, InternshipListings, Footer } from "../../components";
+import Config from "../../utils/config";
 
 export default function Internships({ internships }) {
   return (
@@ -11,9 +12,7 @@ export default function Internships({ internships }) {
 }
 
 export const getServerSideProps = async () => {
-  const resInternships = await fetch(
-    "https://sw-f03-api.vercel.app/api/v1/internship"
-  );
+  const resInternships = await fetch(`${Config.API_URL}/internship`);
   const internships = await resInternships.json();
   return {
     props: {

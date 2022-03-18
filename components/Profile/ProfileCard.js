@@ -8,13 +8,15 @@ import book from "../../public/images/nav/book.svg";
 import contact from "../../public/images/profile/contact.svg";
 import SkillsCard from "./SkillsCard";
 
-function ProfileCard() {
+function ProfileCard({ card }) {
+  const { name, about, title, social } = card;
+
   return (
     <div className="text-[#1e214d]  bg-white rounded-2xl h-[75vh] px-5">
       <div className="grid grid-cols-2 pt-5 ">
         <div className="flex flex-col justify-center items-start">
-          <div className="text-5xl font-bold my-2">John</div>
-          <div className="text-3xl my-2">Full Stack Developer</div>
+          <div className="text-5xl font-bold my-2">{name}</div>
+          <div className="text-3xl my-2">{title}</div>
           <div className="flex my-2">
             <a href="https://www.github.com">
               <img src={git.src} alt="" className="" />
@@ -28,13 +30,7 @@ function ProfileCard() {
           <img src={profile.src} alt="" className="h-[30vh]" />
         </div>
       </div>
-      <div className="my-5 font-medium">
-        Computer Science Engineering student with interest in Full Stack
-        Development. Creating the architecture of a front-end website, and
-        web page user interactions excites me. Creating website applications for the back
-        end. For functionality, servers and databases are one of my speciality. I always ensure mobile
-        phone cross-platform optimization.
-      </div>
+      <div className="my-5 font-medium">{about}</div>
 
       <div className="grid grid-cols-2 gap-1 my-5">
         <div className="">
