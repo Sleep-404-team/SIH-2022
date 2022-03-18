@@ -7,7 +7,7 @@ function EducationCard({ education }) {
       <div className="text-5xl font-bold my-4 mx-2">Education</div>
       <div className="grid grid-cols-1 gap-4">
         {education.map((edu) => (
-          <AddSectionEdu card={edu} />
+          <AddSectionEdu card={edu} key={edu.institution} />
         ))}
       </div>
     </div>

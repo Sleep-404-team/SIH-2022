@@ -7,7 +7,7 @@ function ExperienceCard({ experience }) {
       <div className="text-5xl font-bold my-4 mx-2">Experience</div>
       <div className="grid grid-cols-1 gap-4">
         {experience.map((exp) => {
-          return <AddSectionExp card={exp} />;
+          return <AddSectionExp card={exp} key={exp.company} />;
         })}
       </div>
     </div>
