@@ -1,10 +1,12 @@
-import { Topbar, InternshipListings, Footer } from "../../components";
+import { Topbar, InternshipListings, Footer } from "../../components/Landing";
 import Config from "../../utils/config";
+import Navbar from "../../Components/Navbar/Navbar";
 
 export default function Internships({ internships }) {
   return (
     <>
-      <Topbar />
+      <Navbar />
+      {/* <Topbar /> */}
       <InternshipListings internships={internships} />
       <Footer />
     </>

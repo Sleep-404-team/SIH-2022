@@ -12,10 +12,14 @@ function Dashboard() {
   return (
     <div className="text-[#1e214d]">
       {/* Search bar on top */}
-      {/* <Search /> */}
+      <div className="mt-10">
+        <Search />
+      </div>
 
       {/* Name of user */}
-      <div className="my-2 text-5xl font-bold pt-[3vh]">Good Morning , John.</div>
+      <div className="my-2 text-5xl font-bold pt-[3vh]">
+        Good Morning , John.
+      </div>
 
       {/* Numbers grid */}
       <div className="my-2 grid grid-cols-3 gap-1">
@@ -37,12 +41,15 @@ function Dashboard() {
       </div>
 
       {/* For you title */}
-      <div className="my-2 text-5xl font-bold"><Link href="/internships"> For You</Link> <img src={arrow.src} alt="" className="inline" /> </div>
+      <div className="my-2 text-5xl font-bold">
+        <Link href="/internships"> For You</Link>{" "}
+        <img src={arrow.src} alt="" className="inline" />{" "}
+      </div>
       {/* For you grid */}
       <div className="grid grid-cols-3 gap-10">
         <DashboardCard img={web.src} title="Web Development" />
-        <DashboardCard img={web.src} title="Web Development" />
-        <DashboardCard img={web.src} title="Web Development" />
+        <DashboardCard img={web.src} title="Frontend Development" />
+        <DashboardCard img={web.src} title="App Development" />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="flex flex-col items-center bg-[#1b2027] p-6 text-white">
+    <footer className="flex flex-col items-center bg-[#1e204c] p-6 text-white">
       <div className="flex gap-6 pb-4 text-xl font-medium">
         {navElements.map((element, id) => (
           <Link href={element.href} key={id}>

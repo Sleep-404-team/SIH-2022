@@ -1,4 +1,10 @@
-import { Topbar, Hero, FeaturedInternships, FAQs, Footer } from "../components";
+import {
+  Topbar,
+  Hero,
+  FeaturedInternships,
+  FAQs,
+  Footer,
+} from "../components/Landing";
 
 export default function Home({ featuredInternships }) {
   return (
