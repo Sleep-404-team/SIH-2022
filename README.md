@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DashIntern
 
-## Getting Started
+Offical repo for SIH Internal Hackathon 2022 from team Sleep 404
 
-First, run the development server:
+## Inspiration
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The problems we face when we need to find the relevant internships to start our career and have an hands-on experience in the industry is getting harder for students due to insufficient awareness and resources.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What it does
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Dashboard internships bottlenecks all the internships out there and provides a one stop solution for the students thereby saving there time to search the whole internet. It has pretty cool features like **Resume Builder**, **Curated Resources** , **Personalized portfolio**, which removes the hefty burden from the students shoulder so that they can focus on building their skills. People can build a startup, hire interns and look for funding from investors all from one place.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+https://user-images.githubusercontent.com/60516398/159112443-8b5c9a6f-7958-4a2e-8d8d-2b9d7d3e6f29.mp4
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+# Tech Stack
+- NextJs
+- NodeJs
+- MongoDB
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+# Team Members
+- [Md Farhaan](https://github.com/mdfarhaan)
+- [Samarth Agarwal](https://github.com/Samarth-001)
+- [Mohamed Sami](https://github.com/sm-sami)
+- [Vishal Tyagi](https://github.com/VishalTyagi098)
+- [Harshini Sadagopan](https://github.com/Hashsada18)
+- [Mihika Tripathi](https://github.com/noobaphrodite)
